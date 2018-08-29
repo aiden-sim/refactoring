@@ -1,10 +1,10 @@
-package chapter6.extractmethod.after;
+package chapter6.extractMethod.after;
 
 /**
  * Created by simjunbo on 2018-08-28.
  */
 
-import chapter6.extractmethod.Order;
+import chapter6.extractMethod.Order;
 
 import java.util.Enumeration;
 import java.util.Vector;

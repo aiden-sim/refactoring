@@ -1,4 +1,4 @@
-package chapter6.inlinemethod.before;
+package chapter6.inlineMethod.before;
 
 /**
  * Created by simjunbo on 2018-08-29.

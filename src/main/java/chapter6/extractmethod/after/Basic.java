@@ -1,4 +1,4 @@
-package chapter6.extractmethod.after;
+package chapter6.extractMethod.after;
 
 /**
  * Created by simjunbo on 2018-08-28.

@@ -1,4 +1,4 @@
-package chapter6.inlinetemp.before;
+package chapter6.inlineTemp.before;
 
 /**
  * Created by simjunbo on 2018-08-29.

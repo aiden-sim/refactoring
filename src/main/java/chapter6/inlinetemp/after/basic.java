@@ -1,4 +1,4 @@
-package chapter6.inlinetemp.after;
+package chapter6.inlineTemp.after;
 
 /**
  * Created by simjunbo on 2018-08-29.
