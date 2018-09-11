@@ -14,10 +14,10 @@ class Customer {
 	}
 
 	public BillingPlan getPlan() {
-
+		return new BillingPlan();
 	}
 
 	public PaymentHistory getHistory() {
-
+		return new PaymentHistory();
 	}
 }
