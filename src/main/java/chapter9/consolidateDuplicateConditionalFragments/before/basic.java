@@ -1,6 +1,6 @@
 package chapter9.consolidateDuplicateConditionalFragments.before;
 
-public class basic {
+public class Basic {
 	public static void main(String[] args) {
 		double total = 0.0;
 		int price = 1000;

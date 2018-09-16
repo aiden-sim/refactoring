@@ -3,7 +3,7 @@ package chapter10.renameMethod.after;
 /**
  * 메서드명 변경
  */
-public class basic {
+public class Basic {
 
 	@Deprecated
 	public String getTelephoneNumber() {

@@ -3,7 +3,7 @@ package chapter8.encapsulateField.after;
 /**
  * 필드 캡슐화
  */
-public class basic {
+public class Basic {
 	private String _name;
 
 	public void setName(String name) {

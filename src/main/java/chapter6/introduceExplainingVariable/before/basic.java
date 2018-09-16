@@ -3,7 +3,7 @@ package chapter6.introduceExplainingVariable.before;
 /**
  * 직관적 임시변수 사용
  */
-public class basic {
+public class Basic {
 	private void isFilter() {
 		final String platform = "mac";
 		final String browser = "ie";

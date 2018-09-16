@@ -3,7 +3,7 @@ package chapter10.separateQueryfromModifier.after;
 /**
  * 상태 변경 메서드와 값 반환 메서드를 분리
  */
-public class basic {
+public class Basic {
 
 	void checkSecurity(String[] people) {
 		sendAlert(people);

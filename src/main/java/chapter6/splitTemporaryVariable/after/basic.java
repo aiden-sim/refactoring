@@ -3,7 +3,7 @@ package chapter6.splitTemporaryVariable.after;
 /**
  * 임시변수 분리
  */
-public class basic {
+public class Basic {
 	private double _height;
 	private double _width;
 

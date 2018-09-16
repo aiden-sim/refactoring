@@ -7,7 +7,7 @@ package chapter6.inlineTemp.before;
 /**
  * 임시변수를 메서드 호출로 전환
  */
-public class basic {
+public class Basic {
 	private boolean moreThanPrice(int price) {
 		double basePrice = price;
 		return (basePrice > 1000);

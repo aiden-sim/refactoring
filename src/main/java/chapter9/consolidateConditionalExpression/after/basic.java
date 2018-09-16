@@ -3,7 +3,7 @@ package chapter9.consolidateConditionalExpression.after;
 /**
  * 중복 조건식 통합
  */
-public class basic {
+public class Basic {
 	int _seniority = 1;
 	int _monthsDisabled = 13;
 	boolean _isPartTime = true;

@@ -3,7 +3,7 @@ package chapter9.replaceNestedConditionalWithGuardClauses.before;
 /**
  * 여러 겹의 조건무을 감시 절로 전환
  */
-public class basic {
+public class Basic {
 	double getPayAmount() {
 		double result;
 		boolean _isDead = false;

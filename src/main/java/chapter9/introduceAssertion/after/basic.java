@@ -5,7 +5,7 @@ import org.junit.Assert;
 /**
  * 어설션 넣기
  */
-public class basic {
+public class Basic {
 	double getExpenseLimit() {
 		Memeber _primaryProject = new Memeber();
 		final double NULL_EXPENSE = 0;

@@ -5,7 +5,7 @@ import java.util.Date;
 /**
  * 조건문 쪼개기
  */
-public class basic {
+public class Basic {
 
 	final static Date SUMMER_START = new Date("2018-06-01");
 	final static Date SUMMER_END = new Date("2018-12-01");

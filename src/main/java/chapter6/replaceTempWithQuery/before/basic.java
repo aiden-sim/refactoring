@@ -7,7 +7,7 @@ package chapter6.replaceTempWithQuery.before;
 /**
  * 임시변수를 메서드 호출로 전환
  */
-public class basic {
+public class Basic {
 	private double _quantitiy = 5;
 	private double _itemPrice = 1000;
 
