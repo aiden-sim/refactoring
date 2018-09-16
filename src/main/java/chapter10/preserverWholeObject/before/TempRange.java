@@ -1,0 +1,11 @@
+package chapter10.preserverWholeObject.before;
+
+public class TempRange {
+    public int getLow() {
+        return 1;
+    }
+
+    public int getHigh() {
+        return 1;
+    }
+}
