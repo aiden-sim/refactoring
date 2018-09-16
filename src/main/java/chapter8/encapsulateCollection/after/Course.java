@@ -1,7 +1,5 @@
 package chapter8.encapsulateCollection.after;
 
-import java.util.Iterator;
-
 /**
  * 컬렉션 캡슐화
  */
