@@ -1,4 +1,4 @@
-package chapter11.formTemplateMethod.before;
+package chapter11.formTemplateMethod.after;
 
 import java.util.Enumeration;
 import java.util.Vector;
@@ -15,6 +15,10 @@ public class Customer {
 		_rentals.addElement(arg);
 	}
 
+	public Enumeration getRentals() {
+		return _rentals.elements();
+	}
+
 	public String getName() {
 		return _name;
 	}
@@ -24,21 +28,14 @@ public class Customer {
 	}
 
 	public String statement() {
-		Enumeration rentals = _rentals.elements();
-		String result = getName() + "고객님의 대여 기록\n";
-		while (rentals.hasMoreElements()) {
-			Rental each = (Rental) rentals.nextElement();
-			// 이번에 대여하는 비디오 정보와 대여료 출력
-			result += "\t" + each.getMovie().getTitle() + "\t" +
-					String.valueOf(each.getCharge()) + "\n";
-		}
-		// 푸터 행 추가
-		result += "누적 대여료 : " + String.valueOf(getTotalCharge()) + "\n";
-		result += "적립 포인트 : " + String.valueOf(getTotalFrequentRenterPoints());
-		return result;
+		return new TextStatement().value(this);
 	}
 
-	private double getTotalCharge() {
+	public String htmlStatement() {
+		return new HtmlStatement().value(this);
+	}
+
+	public double getTotalCharge() {
 		double result = 0;
 		Enumeration rentals = _rentals.elements();
 		while (rentals.hasMoreElements()) {
@@ -48,28 +45,13 @@ public class Customer {
 		return result;
 	}
 
-	private int getTotalFrequentRenterPoints() {
+	public int getTotalFrequentRenterPoints() {
 		int result = 0;
 		Enumeration rentals = _rentals.elements();
 		while (rentals.hasMoreElements()) {
 			Rental each = (Rental) rentals.nextElement();
 			result += each.getFrequentRenterPoints();
 		}
-		return result;
-	}
-
-	public String htmlStatement() {
-		Enumeration rentals = _rentals.elements();
-		String result = "<H1><EM>" + getName() + " 고객님의 대여 기록</EM></H1><P>\n";
-		while (rentals.hasMoreElements()) {
-			Rental each = (Rental) rentals.nextElement();
-
-			result += "\t" + each.getMovie().getTitle() + "\t" +
-					String.valueOf(each.getCharge()) + "\n";
-		}
-		// 푸터 행 추가
-		result += "<P>누적 대여료 : <EM>" + String.valueOf(getTotalCharge()) + "</EM><P>\n";
-		result += "적립 포인트 : <EM>" + String.valueOf(getTotalFrequentRenterPoints()) + "</EM><P>";
 		return result;
 	}
 }

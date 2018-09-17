@@ -1,4 +1,4 @@
-package chapter11.replaceDelegationwithInheritance.before;
+package chapter11.replaceDelegationwithInheritance.after;
 /**
  * 위임을 상속으로 전환
  */

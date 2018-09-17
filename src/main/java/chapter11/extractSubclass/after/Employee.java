@@ -1,4 +1,4 @@
-package chapter11.extractSubclass.before;
+package chapter11.extractSubclass.after;
 
 public class Employee {
 	private int _rate;

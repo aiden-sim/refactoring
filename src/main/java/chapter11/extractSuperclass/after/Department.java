@@ -1,21 +1,29 @@
-package chapter11.extractSuperclass.before;
+package chapter11.extractSuperclass.after;
 
 import java.util.Enumeration;
 import java.util.Vector;
 
-public class Department {
-	private String _name;
+public class Department extends Party {
 	private Vector _staff = new Vector();
 
 	public Department(String name) {
-		_name = name;
+		super(name);
 	}
 
+	/**
+	 * 메서드명 변경
+	 */
+
 	public int getTotalAnnualCost() {
+		return getAnnualCost();
+	}
+
+	@Override
+	public int getAnnualCost() {
 		Enumeration e = getStaff();
 		int result = 0;
 		while (e.hasMoreElements()) {
-			Employee each = (Employee) e.nextElement();
+			Party each = (Party) e.nextElement();
 			result += each.getAnnualCost();
 		}
 		return result;
@@ -31,9 +39,5 @@ public class Department {
 
 	public void addStaff(Employee arg) {
 		_staff.addElement(arg);
-	}
-
-	public String getName() {
-		return _name;
 	}
 }

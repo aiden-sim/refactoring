@@ -1,4 +1,4 @@
-package chapter11.formTemplateMethod.before;
+package chapter11.formTemplateMethod.after;
 
 public abstract class Price {
 	abstract int getPriceCode();

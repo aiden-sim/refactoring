@@ -1,19 +1,20 @@
-package chapter11.pullUpMethod.before;
+package chapter11.pullUpMethod.after;
 
 import java.util.Date;
 
 /**
  * 메서드 상향
  */
-public class Customer {
+public abstract class Customer {
+	abstract double chargeFor(Date date);
 
-}
-
-class Regular extends Customer {
 	void createBill(Date date) {
 		double chargeAmount = chargeFor(date);
 	}
+}
 
+class Regular extends Customer {
+	@Override
 	double chargeFor(Date date) {
 		Date now = new Date();
 		if (date.after(now)) {
@@ -25,10 +26,7 @@ class Regular extends Customer {
 }
 
 class Preferred extends Customer {
-	void createBill(Date date) {
-		double chargeAmount = chargeFor(date);
-	}
-
+	@Override
 	double chargeFor(Date date) {
 		Date now = new Date();
 		if (date.after(now)) {
