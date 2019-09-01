@@ -8,19 +8,20 @@ package chapter6.extractMethod.after;
  * 메서드 추출
  */
 public class Basic {
-	private String _name;
+    private String _name;
 
-	public void printOwing(double amount) {
-		printBanner();
-	}
+    public void printOwing(double amount) {
+        printBanner();
+        printDetails(amount);
+    }
 
-	private void printBanner() {
-		System.out.println("banner");
-	}
+    private void printBanner() {
+        System.out.println("banner");
+    }
 
-	// 매개변수로 사용 했다.
-	private void printDetails(double amount) {
-		System.out.println("name : " + _name);
-		System.out.println("amount : " + amount);
-	}
+    // 매개변수로 사용 했다.
+    private void printDetails(double amount) {
+        System.out.println("name : " + _name);
+        System.out.println("amount : " + amount);
+    }
 }
